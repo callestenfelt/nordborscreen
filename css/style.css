@@ -106,16 +106,26 @@ body {
 }
 
 .page::-webkit-scrollbar {
-  width: 10px;
+  width: 12px;
 }
 
 .page::-webkit-scrollbar-track {
-  background: transparent;
+  background: rgba(250, 245, 235, 0.1);
 }
 
 .page::-webkit-scrollbar-thumb {
-  background: rgba(250, 245, 235, 0.25);
+  background: rgba(250, 245, 235, 0.4);
   border-radius: 999px;
+}
+
+.page::-webkit-scrollbar-thumb:hover {
+  background: rgba(250, 245, 235, 0.6);
+}
+
+/* Force scrollbar to always show */
+.page {
+  scrollbar-width: auto;
+  scrollbar-color: rgba(250, 245, 235, 0.4) rgba(250, 245, 235, 0.1);
 }
 
 /* ===========================================
@@ -525,4 +535,127 @@ body {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* ===========================================
+   Hidden Menu
+   =========================================== */
+
+/* Invisible trigger area in upper right */
+.menu-trigger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  /* Debug: uncomment to see trigger area */
+  /* background: rgba(255, 0, 0, 0.2); */
+}
+
+/* Menu overlay */
+.menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  overflow-y: auto;
+}
+
+.menu-overlay.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu-overlay__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--content-padding);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.menu-overlay__title {
+  font-size: var(--font-size-heading);
+  font-weight: 700;
+  margin: 0;
+}
+
+.menu-overlay__close {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--card-radius);
+  background: var(--button-bg);
+  border: 2px solid var(--button-bg);
+  color: var(--button-text);
+  font-size: 28px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-overlay__close:hover {
+  background: transparent;
+  color: var(--button-bg);
+}
+
+.menu-overlay__content {
+  flex: 1;
+  padding: var(--content-padding);
+  overflow-y: auto;
+}
+
+/* Century sections */
+.menu-century {
+  margin-bottom: var(--spacing-xl);
+}
+
+.menu-century__header {
+  font-size: var(--font-size-subheading);
+  font-weight: 700;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-text);
+}
+
+.menu-century__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-century__item {
+  margin-bottom: var(--spacing-sm);
+}
+
+.menu-century__link {
+  display: block;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--color-surface);
+  border-radius: var(--card-radius);
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: var(--font-size-body);
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.menu-century__link:hover,
+.menu-century__link.is-active {
+  background: var(--color-surface-hover);
+}
+
+.menu-century__link.is-active {
+  border-left: 4px solid var(--color-text);
 }
