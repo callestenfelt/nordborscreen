@@ -5,25 +5,79 @@ import { loadTheme, loadObject } from './utils/content.js';
 import { createThemePage } from './components/theme-page.js';
 import { createObjectPage } from './components/object-page.js';
 
-// Theme data organized by century
+// Theme data organized by century (60 themes total)
 const THEMES_BY_CENTURY = {
   '1500-tal': [
-    { id: 'samerna-handlar-med-dyra-palsverk', title: 'Samerna handlar med dyra pälsverk', active: true }
+    { id: 'skogen', title: 'Den oumbärliga skogen', active: true },
+    { id: 'finngarden', title: 'Med eld tämjer de skogen', active: false },
+    { id: 'kyrkbacken', title: 'Kyrkan samlar byn', active: false },
+    { id: 'familj', title: 'FAMILJ', active: false },
+    { id: 'natur', title: 'NATUR', active: false },
+    { id: 'tanke', title: 'TANKE', active: false },
+    { id: 'elisabet-christoffersdotter', title: 'Elisabet Christoffersdotter', active: false },
+    { id: 'inga-fran-tingevaara', title: 'Inga från Tingevaara', active: false },
+    { id: 'joen-petri-klint', title: 'Joen Petri Klint', active: false },
+    { id: 'samuel-kiechel', title: 'Samuel Kiechel', active: false }
   ],
   '1600-tal': [
-    { id: 'example-1600', title: 'Exempel 1600-tal', active: false }
+    { id: 'adelsgodset', title: 'De adliga familjerna på godsen', active: false },
+    { id: 'staden', title: 'Välkommen till staden', active: false },
+    { id: 'dygd-och-dod', title: 'Ett dygdigt liv och en festlig begravning', active: false },
+    { id: 'familj', title: 'FAMILJ', active: false },
+    { id: 'natur', title: 'NATUR', active: false },
+    { id: 'tanke', title: 'TANKE', active: false },
+    { id: 'lars-nilsson', title: 'Lars Nilsson', active: false },
+    { id: 'maria-sofia-de-la-gardie', title: 'Maria Sofia De La Gardie', active: false },
+    { id: 'mats-ersson-nohrman', title: 'Mats Ersson Nohrman', active: false }
   ],
   '1700-tal': [
-    { id: 'example-1700', title: 'Exempel 1700-tal', active: false }
+    { id: 'hemmet', title: 'Hemmets trygga tempel', active: false },
+    { id: 'tradgarden', title: 'Fjärran lyx eller närproducerade varor', active: false },
+    { id: 'tryckeriet', title: 'Orden flyger', active: false },
+    { id: 'familj', title: 'FAMILJ', active: false },
+    { id: 'natur', title: 'NATUR', active: false },
+    { id: 'tanke', title: 'TANKE', active: false },
+    { id: 'catharina-koberg', title: 'Catharina Koberg', active: false },
+    { id: 'gideon', title: 'Gideon', active: false },
+    { id: 'peter-forsskal', title: 'Peter Forsskål', active: false }
   ],
   '1800-tal': [
-    { id: 'example-1800', title: 'Exempel 1800-tal', active: false }
+    { id: 'byn', title: 'Åkerns människor', active: false },
+    { id: 'marknaden', title: 'Myllrande marknadsliv', active: false },
+    { id: 'kafeet', title: 'Kaféet slår upp dörrarna', active: false },
+    { id: 'bonehuset', title: 'En frälst gemenskap', active: false },
+    { id: 'fosterlandet', title: 'Klasskamp och fosterlandskärlek', active: false },
+    { id: 'framtidslandet', title: 'Framtidslandet i norr', active: false },
+    { id: 'familj', title: 'FAMILJ', active: false },
+    { id: 'natur', title: 'NATUR', active: false },
+    { id: 'tanke', title: 'TANKE', active: false },
+    { id: 'amanda-horney', title: 'Amanda Horney', active: false },
+    { id: 'anna-karlsson', title: 'Anna Karlsson', active: false },
+    { id: 'anna-nilsdotter', title: 'Anna Nilsdotter', active: false },
+    { id: 'erik-ekstrom', title: 'Erik Ekström', active: false },
+    { id: 'kristoffer-sjulsson', title: 'Kristoffer Sjulsson', active: false },
+    { id: 'mathilda', title: 'Mathilda', active: false },
+    { id: 'wilhelm-davidsson', title: 'Wilhelm Davidsson', active: false }
   ],
   '1900-tal': [
-    { id: 'example-1900', title: 'Exempel 1900-tal', active: false }
+    { id: 'kriget', title: 'Andra världskriget', active: false },
+    { id: 'rekordaren', title: 'Välfärdsrekord i Norden', active: false },
+    { id: 'ritbordet', title: 'Framtiden på ritbordet', active: false },
+    { id: 'valfardslandet', title: 'Höjd standard och höjda röster', active: false },
+    { id: 'familj', title: 'FAMILJ', active: false },
+    { id: 'tanke', title: 'TANKE', active: false },
+    { id: 'familjen-barsom', title: 'Familjen Barsom', active: false },
+    { id: 'hulda-hals', title: 'Hulda Hals', active: false },
+    { id: 'lars', title: 'Lars', active: false },
+    { id: 'lena-larsson', title: 'Lena Larsson', active: false },
+    { id: 'selma-perten', title: 'Selma Pertén', active: false }
   ],
   '2000-tal': [
-    { id: 'example-2000', title: 'Exempel 2000-tal', active: false }
+    { id: 'samtiden', title: 'Samtiden', active: false },
+    { id: 'alla-spar', title: 'ALLA SPÅR', active: false },
+    { id: 'dilemma-familj', title: 'Dilemma FAMILJ', active: false },
+    { id: 'dilemma-natur', title: 'Dilemma NATUR', active: false },
+    { id: 'dilemma-tanke', title: 'Dilemma TANKE', active: false }
   ]
 };
 
