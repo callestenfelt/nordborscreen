@@ -3,14 +3,17 @@
    =========================================== */
 
 :root {
-  /* Colors - Dark museum theme */
-  --color-bg: #1a1a1a;
-  --color-surface: #2a2a2a;
-  --color-surface-hover: #3a3a3a;
-  --color-text: #f5f5f5;
-  --color-text-muted: #a0a0a0;
-  --color-accent: #c9a227;
-  --color-border: #404040;
+  /* Colors - Light museum theme (matching guide.nordiskamuseet.se) */
+  --color-bg: #ffffff;
+  --color-surface: #f5f5f5;
+  --color-surface-hover: #ebebeb;
+  --color-text: #1a1a1a;
+  --color-text-muted: #666666;
+  --color-accent: #2d5a27;
+  --color-accent-light: #e8f0e7;
+  --color-border: #e0e0e0;
+  --color-timeline-line: #cccccc;
+  --color-timeline-active: #2d5a27;
 
   /* Typography */
   --font-family: 'Roboto', system-ui, -apple-system, sans-serif;
@@ -153,12 +156,17 @@ body {
 
 /* Section Headers */
 .section-header {
-  font-size: var(--font-size-subheading);
-  font-weight: 500;
-  color: var(--color-text-muted);
+  font-size: var(--font-size-body);
+  font-weight: 600;
+  color: var(--color-text);
   margin-bottom: var(--spacing-md);
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.theme-header + section .section-header {
+  border-top: none;
+  padding-top: 0;
 }
 
 /* ===========================================
@@ -173,18 +181,19 @@ body {
 }
 
 .object-card {
-  background: var(--color-surface);
+  background: var(--color-bg);
   border-radius: var(--card-radius);
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   min-height: var(--touch-target-min);
+  border: 1px solid var(--color-border);
 }
 
 .object-card:hover,
 .object-card:active {
-  background: var(--color-surface-hover);
   transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .object-card__image {
@@ -209,6 +218,7 @@ body {
 .object-rail-container {
   position: relative;
   margin-bottom: var(--spacing-xl);
+  padding: 0 var(--spacing-xl);
 }
 
 .object-rail {
@@ -238,37 +248,41 @@ body {
 .rail-arrow {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  width: 56px;
-  height: 56px;
+  transform: translateY(-70%);
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
-  background: var(--color-surface);
-  border: 2px solid var(--color-border);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
   color: var(--color-text);
-  font-size: 24px;
+  font-size: 28px;
+  font-weight: 300;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
   z-index: 10;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .rail-arrow:hover {
-  background: var(--color-surface-hover);
+  background: var(--color-surface);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .rail-arrow--left {
-  left: -28px;
+  left: 0;
 }
 
 .rail-arrow--right {
-  right: -28px;
+  right: 0;
 }
 
 .rail-arrow:disabled {
   opacity: 0.3;
   cursor: not-allowed;
+  box-shadow: none;
 }
 
 /* ===========================================
@@ -285,22 +299,23 @@ body {
   align-items: center;
   gap: var(--spacing-xs);
   padding: var(--spacing-sm) var(--spacing-md);
-  background: var(--color-surface);
-  border: none;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
   border-radius: 999px;
   color: var(--color-text);
   font-family: var(--font-family);
   font-size: var(--font-size-body);
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
   margin-bottom: var(--spacing-lg);
   min-height: var(--touch-target-min);
 }
 
 .back-button:hover,
 .back-button:active {
-  background: var(--color-surface-hover);
+  background: var(--color-surface);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .back-button__icon {
@@ -320,9 +335,9 @@ body {
 
 /* Object Media Section */
 .object-media {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
   margin-bottom: var(--spacing-lg);
 }
 
@@ -338,61 +353,66 @@ body {
   display: block;
 }
 
-/* Timeline */
+/* Timeline - Horizontal bar style */
 .object-timeline {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin-top: var(--spacing-md);
 }
 
 .timeline {
+  display: flex;
+  align-items: center;
   position: relative;
-  padding-left: var(--spacing-md);
+  padding: var(--spacing-md) 0;
 }
 
 .timeline::before {
   content: '';
   position: absolute;
   left: 0;
-  top: 0;
-  bottom: 0;
-  width: 3px;
-  background: var(--color-border);
+  right: 0;
+  top: 50%;
+  height: 2px;
+  background: var(--color-timeline-line);
+  transform: translateY(-50%);
+  z-index: 0;
 }
 
 .timeline-marker {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  padding: var(--spacing-sm) 0;
+  z-index: 1;
 }
 
 .timeline-marker::before {
   content: '';
-  position: absolute;
-  left: calc(-1 * var(--spacing-md) - 6px);
-  top: 50%;
-  transform: translateY(-50%);
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: var(--color-accent);
-  border: 2px solid var(--color-bg);
+  background: var(--color-bg);
+  border: 2px solid var(--color-timeline-line);
+  margin-bottom: var(--spacing-xs);
 }
 
 .timeline-marker--active::before {
   width: 16px;
   height: 16px;
-  left: calc(-1 * var(--spacing-md) - 8px);
+  background: var(--color-timeline-active);
+  border-color: var(--color-timeline-active);
 }
 
 .timeline-period {
-  font-size: var(--font-size-caption);
+  font-size: var(--font-size-small);
   color: var(--color-text-muted);
+  text-align: center;
 }
 
 .timeline-period--active {
-  font-size: var(--font-size-body);
-  font-weight: 500;
-  color: var(--color-accent);
+  font-size: var(--font-size-caption);
+  font-weight: 600;
+  color: var(--color-timeline-active);
 }
 
 /* Object Meta */
