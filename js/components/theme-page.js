@@ -20,8 +20,6 @@ export function createThemePage(themeData, onObjectClick) {
   // Primary Objects Section
   if (themeData.primaryObjects && themeData.primaryObjects.length > 0) {
     const primarySection = document.createElement('section');
-    primarySection.innerHTML = `<h2 class="section-header">Nyckelforemål</h2>`;
-
     const grid = createObjectGrid(themeData.primaryObjects, onObjectClick);
     primarySection.appendChild(grid);
     page.appendChild(primarySection);

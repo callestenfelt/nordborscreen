@@ -27,7 +27,6 @@ function createObjectCard(obj, onClick) {
       alt="${obj.title}"
       loading="lazy"
     >
-    <div class="object-card__title">${obj.title}</div>
   `;
 
   const handleClick = () => onClick(obj.id);
