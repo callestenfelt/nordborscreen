@@ -333,31 +333,21 @@ body {
   background: var(--color-bg);
 }
 
-/* Back Button */
+/* Back Button - simple arrow */
 .back-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-xs);
-  padding: var(--spacing-sm) var(--spacing-md);
-  background: var(--button-bg);
-  border: 2px solid var(--button-bg);
-  border-radius: var(--card-radius);
-  color: var(--button-text);
-  font-family: var(--font-family);
-  font-size: var(--font-size-body);
-  font-weight: 700;
+  display: block;
+  background: transparent;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  margin-bottom: var(--spacing-lg);
-  min-height: var(--touch-target-min);
-  text-transform: uppercase;
+  color: var(--color-text);
+  position: absolute;
+  top: 25px;
+  left: var(--content-padding);
 }
 
-.back-button:hover,
-.back-button:active {
-  background: transparent;
-  color: var(--button-bg);
+.back-button:hover {
+  opacity: 0.7;
 }
 
 .back-button:focus-visible {
@@ -366,14 +356,23 @@ body {
 }
 
 .back-button__icon {
-  width: 28px;
-  height: 22px;
-  flex-shrink: 0;
+  width: 30px;
+  height: 24px;
+  display: block;
+}
+
+.back-button__label {
+  display: none;
+}
+
+/* Object Page */
+.object-page {
+  padding-top: 70px; /* Space for back button */
 }
 
 /* Object Header */
 .object-header {
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
 }
 
 .object-title {
@@ -382,16 +381,22 @@ body {
   margin-bottom: var(--spacing-sm);
 }
 
-/* Object Media Section */
-.object-media {
+/* Object Main Layout (text left, image right) */
+.object-main {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+  align-items: start;
+}
+
+.object-text {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
-  margin-bottom: var(--spacing-lg);
 }
 
 .object-image-container {
-  border-radius: var(--card-radius);
   overflow: hidden;
   background: var(--color-surface);
 }
@@ -404,7 +409,7 @@ body {
 
 /* Timeline - Ruler style matching original guide */
 .object-timeline {
-  margin-top: var(--spacing-md);
+  /* positioned in text column */
 }
 
 .timeline {
@@ -415,7 +420,7 @@ body {
 }
 
 .timeline-ruler {
-  height: 18px;
+  height: 8px;
   border-bottom: 1px solid currentColor;
   width: 100%;
   display: flex;
@@ -436,7 +441,7 @@ body {
   position: absolute;
   bottom: 0;
   border-top: 2px solid var(--color-text);
-  height: 40px;
+  height: 30px;
   background-color: rgba(250, 245, 235, 0.2);
 }
 
@@ -456,11 +461,12 @@ body {
 /* Object Meta */
 .object-meta {
   display: flex;
-  gap: var(--spacing-lg);
-  padding: var(--spacing-md) 0;
-  border-top: 1px solid var(--color-border);
-  border-bottom: 1px solid var(--color-border);
-  margin-bottom: var(--spacing-lg);
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.object-intro {
+  margin-top: var(--spacing-md);
 }
 
 .object-meta__item {

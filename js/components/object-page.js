@@ -9,43 +9,31 @@ export function createObjectPage(objectData, onBack) {
   const backButton = document.createElement('button');
   backButton.className = 'back-button';
   backButton.innerHTML = `
-    <svg class="back-button__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="none" viewBox="0 0 28 22"><path fill="currentColor" d="M0 12.583c4.88.4 8.36 3.606 8.64 9.417l3.72-.802c-.48-4.087-3.2-7.653-6.36-8.615h22V9.457H6c3.16-.962 5.88-4.568 6.36-8.615L8.64 0C8.36 5.81 4.88 9.056 0 9.457z"/></svg>
-    <span>Tillbaka</span>
+    <svg class="back-button__icon" xmlns="http://www.w3.org/2000/svg" width="30" height="24" fill="none" viewBox="0 0 28 22"><path fill="currentColor" d="M0 12.583c4.88.4 8.36 3.606 8.64 9.417l3.72-.802c-.48-4.087-3.2-7.653-6.36-8.615h22V9.457H6c3.16-.962 5.88-4.568 6.36-8.615L8.64 0C8.36 5.81 4.88 9.056 0 9.457z"/></svg>
+    <span class="back-button__label">Tillbaka</span>
   `;
   backButton.addEventListener('click', onBack);
   page.appendChild(backButton);
+
+  // Main content area (text left, image right)
+  const mainContent = document.createElement('div');
+  mainContent.className = 'object-main';
+
+  // Left column - text content
+  const textColumn = document.createElement('div');
+  textColumn.className = 'object-text';
 
   // Object header
   const header = document.createElement('header');
   header.className = 'object-header';
   header.innerHTML = `<h1 class="object-title">${objectData.title}</h1>`;
-  page.appendChild(header);
-
-  // Media section (image + timeline)
-  const media = document.createElement('div');
-  media.className = 'object-media';
-
-  // Image
-  const imageContainer = document.createElement('div');
-  imageContainer.className = 'object-image-container';
-  if (objectData.images && objectData.images.length > 0) {
-    imageContainer.innerHTML = `
-      <img
-        class="object-image"
-        src="${objectData.images[0]}"
-        alt="${objectData.title}"
-      >
-    `;
-  }
-  media.appendChild(imageContainer);
+  textColumn.appendChild(header);
 
   // Timeline
   const timelineContainer = document.createElement('div');
   timelineContainer.className = 'object-timeline';
   timelineContainer.appendChild(createTimeline(objectData.timeline));
-  media.appendChild(timelineContainer);
-
-  page.appendChild(media);
+  textColumn.appendChild(timelineContainer);
 
   // Meta information
   const meta = document.createElement('div');
@@ -63,20 +51,38 @@ export function createObjectPage(objectData, onBack) {
   if (objectData.objectNumber) {
     meta.innerHTML += `
       <div class="object-meta__item">
-        <span class="object-meta__label">Foremalsnummer</span>
+        <span class="object-meta__label">Föremålsnummer</span>
         <span class="object-meta__value">${objectData.objectNumber}</span>
       </div>
     `;
   }
 
   if (meta.innerHTML) {
-    page.appendChild(meta);
+    textColumn.appendChild(meta);
   }
 
-  // Intro text
+  mainContent.appendChild(textColumn);
+
+  // Right column - image
+  const imageContainer = document.createElement('div');
+  imageContainer.className = 'object-image-container';
+  if (objectData.images && objectData.images.length > 0) {
+    imageContainer.innerHTML = `
+      <img
+        class="object-image"
+        src="${objectData.images[0]}"
+        alt="${objectData.title}"
+      >
+    `;
+  }
+  mainContent.appendChild(imageContainer);
+
+  page.appendChild(mainContent);
+
+  // Intro text (full width below)
   if (objectData.intro) {
     const intro = document.createElement('p');
-    intro.className = 'paragraph';
+    intro.className = 'paragraph object-intro';
     intro.textContent = objectData.intro;
     page.appendChild(intro);
   }
