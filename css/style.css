@@ -3,17 +3,31 @@
    =========================================== */
 
 :root {
-  /* Colors - Light museum theme (matching guide.nordiskamuseet.se) */
-  --color-bg: #ffffff;
-  --color-surface: #f5f5f5;
-  --color-surface-hover: #ebebeb;
-  --color-text: #1a1a1a;
-  --color-text-muted: #666666;
-  --color-accent: #2d5a27;
-  --color-accent-light: #e8f0e7;
-  --color-border: #e0e0e0;
-  --color-timeline-line: #cccccc;
-  --color-timeline-active: #2d5a27;
+  /* Colors - 1500-tal theme (Nordiska museet guide) */
+  --color-bg: #FAF5EB;
+  --color-surface: #f0e9db;
+  --color-surface-hover: #e6dfd0;
+  --color-text: #000000;
+  --color-text-muted: #333333;
+  --color-accent: #008018;
+  --color-accent-light: #e8f5ea;
+  --color-border: #008018;
+  --color-timeline-line: #000000;
+  --color-timeline-active: #008018;
+
+  /* All century colors for reference */
+  --color-1500: #008018;
+  --color-1500-bg: #FAF5EB;
+  --color-1600: #AA91FF;
+  --color-1600-bg: #370518;
+  --color-1700: #98CDB2;
+  --color-1700-bg: #0202EA;
+  --color-1800: #4B0A23;
+  --color-1800-bg: #FF4629;
+  --color-1900: #5A6950;
+  --color-1900-bg: #FFFA00;
+  --color-2000: #FFB9FF;
+  --color-2000-bg: #6F430C;
 
   /* Typography */
   --font-family: 'Roboto', system-ui, -apple-system, sans-serif;
@@ -353,66 +367,57 @@ body {
   display: block;
 }
 
-/* Timeline - Horizontal bar style */
+/* Timeline - Ruler style matching original guide */
 .object-timeline {
   margin-top: var(--spacing-md);
 }
 
 .timeline {
-  display: flex;
-  align-items: center;
   position: relative;
-  padding: var(--spacing-md) 0;
 }
 
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  height: 2px;
-  background: var(--color-timeline-line);
-  transform: translateY(-50%);
-  z-index: 0;
+.timeline-ruler {
+  height: 15px;
+  border-bottom: 1px solid var(--color-text);
+  width: 100%;
+  display: flex;
+  position: relative;
 }
 
-.timeline-marker {
+.timeline-ruler__segment {
+  border-right: 1px solid var(--color-text);
+  height: 100%;
   flex: 1;
+}
+
+.timeline-ruler__segment:first-child {
+  border-left: 1px solid var(--color-text);
+}
+
+.timeline-ruler__marker {
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid var(--color-accent);
+  height: 40px;
+  background-color: rgba(0, 128, 24, 0.15);
+}
+
+.timeline-legend {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
-
-.timeline-marker::before {
-  content: '';
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--color-bg);
-  border: 2px solid var(--color-timeline-line);
-  margin-bottom: var(--spacing-xs);
-}
-
-.timeline-marker--active::before {
-  width: 16px;
-  height: 16px;
-  background: var(--color-timeline-active);
-  border-color: var(--color-timeline-active);
+  justify-content: space-between;
+  width: 100%;
+  margin-top: var(--spacing-xs);
 }
 
 .timeline-period {
   font-size: var(--font-size-small);
-  color: var(--color-text-muted);
-  text-align: center;
+  font-weight: 500;
+  color: var(--color-text);
 }
 
 .timeline-period--active {
-  font-size: var(--font-size-caption);
-  font-weight: 600;
-  color: var(--color-timeline-active);
+  color: var(--color-accent);
+  font-weight: 700;
 }
 
 /* Object Meta */

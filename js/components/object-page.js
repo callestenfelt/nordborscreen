@@ -113,14 +113,49 @@ function createTimeline(timeline) {
     { label: '2000-tal', active: false }
   ];
 
-  periods.forEach(period => {
+  // Find active period index
+  const activeIndex = periods.findIndex(p => p.active);
+
+  // Create ruler with 10 segments (representing ~50 years each across 500 years)
+  const ruler = document.createElement('div');
+  ruler.className = 'timeline-ruler';
+
+  for (let i = 0; i < 10; i++) {
+    const segment = document.createElement('div');
+    segment.className = 'timeline-ruler__segment';
+    ruler.appendChild(segment);
+  }
+
+  // Add marker for active period
+  if (activeIndex >= 0) {
     const marker = document.createElement('div');
-    marker.className = `timeline-marker${period.active ? ' timeline-marker--active' : ''}`;
-    marker.innerHTML = `
-      <span class="timeline-period${period.active ? ' timeline-period--active' : ''}">${period.label}</span>
-    `;
-    container.appendChild(marker);
-  });
+    marker.className = 'timeline-ruler__marker';
+    // Position marker based on which century is active (each century = ~16.67% width)
+    const leftPos = (activeIndex * 100 / 6);
+    const width = (100 / 6);
+    marker.style.left = `${leftPos}%`;
+    marker.style.width = `${width}%`;
+    ruler.appendChild(marker);
+  }
+
+  container.appendChild(ruler);
+
+  // Create legend
+  const legend = document.createElement('div');
+  legend.className = 'timeline-legend';
+
+  // Show first and last labels only for cleaner look
+  const firstPeriod = document.createElement('span');
+  firstPeriod.className = `timeline-period${periods[0].active ? ' timeline-period--active' : ''}`;
+  firstPeriod.textContent = '1500';
+  legend.appendChild(firstPeriod);
+
+  const lastPeriod = document.createElement('span');
+  lastPeriod.className = `timeline-period${periods[periods.length - 1].active ? ' timeline-period--active' : ''}`;
+  lastPeriod.textContent = '2000';
+  legend.appendChild(lastPeriod);
+
+  container.appendChild(legend);
 
   return container;
 }
