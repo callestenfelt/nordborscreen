@@ -356,7 +356,9 @@ body {
 }
 
 .back-button__icon {
-  font-size: 24px;
+  width: 28px;
+  height: 22px;
+  flex-shrink: 0;
 }
 
 /* Object Header */

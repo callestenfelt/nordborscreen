@@ -9,7 +9,7 @@ export function createObjectPage(objectData, onBack) {
   const backButton = document.createElement('button');
   backButton.className = 'back-button';
   backButton.innerHTML = `
-    <span class="back-button__icon">&#8249;</span>
+    <svg class="back-button__icon" xmlns="http://www.w3.org/2000/svg" width="28" height="22" fill="none" viewBox="0 0 28 22"><path fill="currentColor" d="M0 12.583c4.88.4 8.36 3.606 8.64 9.417l3.72-.802c-.48-4.087-3.2-7.653-6.36-8.615h22V9.457H6c3.16-.962 5.88-4.568 6.36-8.615L8.64 0C8.36 5.81 4.88 9.056 0 9.457z"/></svg>
     <span>Tillbaka</span>
   `;
   backButton.addEventListener('click', onBack);
