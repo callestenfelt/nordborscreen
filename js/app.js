@@ -5,80 +5,129 @@ import { loadTheme, loadObject } from './utils/content.js';
 import { createThemePage } from './components/theme-page.js';
 import { createObjectPage } from './components/object-page.js';
 
-// Theme data organized by century (60 themes total)
-const THEMES_BY_CENTURY = {
-  '1500-tal': [
-    { id: 'skogen', title: 'Den oumbärliga skogen', active: true },
-    { id: 'finngarden', title: 'Med eld tämjer de skogen', active: false },
-    { id: 'kyrkbacken', title: 'Kyrkan samlar byn', active: false },
-    { id: 'familj', title: 'FAMILJ', active: false },
-    { id: 'natur', title: 'NATUR', active: false },
-    { id: 'tanke', title: 'TANKE', active: false },
-    { id: 'elisabet-christoffersdotter', title: 'Elisabet Christoffersdotter', active: false },
-    { id: 'inga-fran-tingevaara', title: 'Inga från Tingevaara', active: false },
-    { id: 'joen-petri-klint', title: 'Joen Petri Klint', active: false },
-    { id: 'samuel-kiechel', title: 'Samuel Kiechel', active: false }
-  ],
-  '1600-tal': [
-    { id: 'adelsgodset', title: 'De adliga familjerna på godsen', active: false },
-    { id: 'staden', title: 'Välkommen till staden', active: false },
-    { id: 'dygd-och-dod', title: 'Ett dygdigt liv och en festlig begravning', active: false },
-    { id: 'familj', title: 'FAMILJ', active: false },
-    { id: 'natur', title: 'NATUR', active: false },
-    { id: 'tanke', title: 'TANKE', active: false },
-    { id: 'lars-nilsson', title: 'Lars Nilsson', active: false },
-    { id: 'maria-sofia-de-la-gardie', title: 'Maria Sofia De La Gardie', active: false },
-    { id: 'mats-ersson-nohrman', title: 'Mats Ersson Nohrman', active: false }
-  ],
-  '1700-tal': [
-    { id: 'hemmet', title: 'Hemmets trygga tempel', active: false },
-    { id: 'tradgarden', title: 'Fjärran lyx eller närproducerade varor', active: false },
-    { id: 'tryckeriet', title: 'Orden flyger', active: false },
-    { id: 'familj', title: 'FAMILJ', active: false },
-    { id: 'natur', title: 'NATUR', active: false },
-    { id: 'tanke', title: 'TANKE', active: false },
-    { id: 'catharina-koberg', title: 'Catharina Koberg', active: false },
-    { id: 'gideon', title: 'Gideon', active: false },
-    { id: 'peter-forsskal', title: 'Peter Forsskål', active: false }
-  ],
-  '1800-tal': [
-    { id: 'byn', title: 'Åkerns människor', active: false },
-    { id: 'marknaden', title: 'Myllrande marknadsliv', active: false },
-    { id: 'kafeet', title: 'Kaféet slår upp dörrarna', active: false },
-    { id: 'bonehuset', title: 'En frälst gemenskap', active: false },
-    { id: 'fosterlandet', title: 'Klasskamp och fosterlandskärlek', active: false },
-    { id: 'framtidslandet', title: 'Framtidslandet i norr', active: false },
-    { id: 'familj', title: 'FAMILJ', active: false },
-    { id: 'natur', title: 'NATUR', active: false },
-    { id: 'tanke', title: 'TANKE', active: false },
-    { id: 'amanda-horney', title: 'Amanda Horney', active: false },
-    { id: 'anna-karlsson', title: 'Anna Karlsson', active: false },
-    { id: 'anna-nilsdotter', title: 'Anna Nilsdotter', active: false },
-    { id: 'erik-ekstrom', title: 'Erik Ekström', active: false },
-    { id: 'kristoffer-sjulsson', title: 'Kristoffer Sjulsson', active: false },
-    { id: 'mathilda', title: 'Mathilda', active: false },
-    { id: 'wilhelm-davidsson', title: 'Wilhelm Davidsson', active: false }
-  ],
-  '1900-tal': [
-    { id: 'kriget', title: 'Andra världskriget', active: false },
-    { id: 'rekordaren', title: 'Välfärdsrekord i Norden', active: false },
-    { id: 'ritbordet', title: 'Framtiden på ritbordet', active: false },
-    { id: 'valfardslandet', title: 'Höjd standard och höjda röster', active: false },
-    { id: 'familj', title: 'FAMILJ', active: false },
-    { id: 'tanke', title: 'TANKE', active: false },
-    { id: 'familjen-barsom', title: 'Familjen Barsom', active: false },
-    { id: 'hulda-hals', title: 'Hulda Hals', active: false },
-    { id: 'lars', title: 'Lars', active: false },
-    { id: 'lena-larsson', title: 'Lena Larsson', active: false },
-    { id: 'selma-perten', title: 'Selma Pertén', active: false }
-  ],
-  '2000-tal': [
-    { id: 'samtiden', title: 'Samtiden', active: false },
-    { id: 'alla-spar', title: 'ALLA SPÅR', active: false },
-    { id: 'dilemma-familj', title: 'Dilemma FAMILJ', active: false },
-    { id: 'dilemma-natur', title: 'Dilemma NATUR', active: false },
-    { id: 'dilemma-tanke', title: 'Dilemma TANKE', active: false }
-  ]
+// Theme data: Century → Room → Themes
+const THEMES_DATA = {
+  '1500': {
+    'Skogen': [
+      { id: 'samerna-handlar-med-dyra-palsverk', title: 'Samerna handlar med dyra pälsverk', active: true },
+      { id: 'trygghet-och-oro-i-skogen', title: 'Trygghet och oro i skogen' },
+      { id: 'samuel-kiechels-resa-i-norden', title: 'Samuel Kiechels resa i Norden' }
+    ],
+    'Finngården': [
+      { id: 'en-magisk-varld', title: 'En magisk värld' },
+      { id: 'leva-och-overleva-i-vinterskogen', title: 'Leva och överleva i vinterskogen' },
+      { id: 'skogsfinnarnas-resa', title: 'Skogsfinnarnas resa' }
+    ],
+    'Kyrkbacken': [
+      { id: 'nya-stromningar-nar-norden', title: 'Nya strömningar når Norden' },
+      { id: 'den-langa-reformationen', title: 'Den långa reformationen' },
+      { id: 'varldsbild-och-vetande', title: 'Världsbild och vetande' }
+    ]
+  },
+  '1600': {
+    'Adelsgodset': [
+      { id: 'jord-och-makt', title: 'Jord och makt' },
+      { id: 'varldsbild-och-sjalvbild', title: 'Världsbild och självbild' }
+    ],
+    'Staden': [
+      { id: 'staden-som-statens-verktyg', title: 'Staden som statens verktyg' },
+      { id: 'stadsliv', title: 'Stadsliv' },
+      { id: 'uppstader-stapelstader-och-kolonier', title: 'Uppstäder, stapelstäder och kolonier' },
+      { id: 'skra-och-hantverk', title: 'Skrå och hantverk' }
+    ],
+    'Dygd och död': [
+      { id: 'den-dygdiga-manniskan', title: 'Den dygdiga människan' },
+      { id: 'en-hedersam-dod', title: 'En hedersam död' },
+      { id: 'begravningar-i-bondbyarna', title: 'Begravningar i bondbyarna' },
+      { id: 'aktenskapet-bevarar-ordningen', title: 'Äktenskapet bevarar ordningen' }
+    ]
+  },
+  '1700': {
+    'Trädgården': [
+      { id: 'naturen-som-ymnighetshorn-i', title: 'Naturen som ymnighetshorn I' },
+      { id: 'naturen-som-ymnighetshorn-ii', title: 'Naturen som ymnighetshorn II' },
+      { id: 'en-globaliserad-varuvarld-i', title: 'En globaliserad varuvärld I' },
+      { id: 'en-globaliserad-varuvarld-ii', title: 'En globaliserad varuvärld II' },
+      { id: 'en-ny-sorts-lyx-i', title: 'En ny sorts lyx I' },
+      { id: 'en-ny-sorts-lyx-ii', title: 'En ny sorts lyx II' }
+    ],
+    'Hemmet': [
+      { id: 'ett-nytt-satt-att-bo', title: 'Ett nytt sätt att bo' },
+      { id: 'modrar-barn-och-familjeliv', title: 'Mödrar, barn och familjeliv' }
+    ],
+    'Tryckeriet': [
+      { id: 'friheten-och-ordets-makt', title: 'Friheten och ordets makt' },
+      { id: 'konst-kultur-och-politisk-dramatik', title: 'Konst, kultur och politisk dramatik' }
+    ]
+  },
+  '1800': {
+    'Byn': [
+      { id: 'bondbrollop', title: 'Bondbröllop' },
+      { id: 'laga-skiftet-och-mattande-potatis', title: 'Laga skiftet och mättande potatis' },
+      { id: 'landsbygdens-nya-underklass', title: 'Landsbygdens nya underklass' },
+      { id: 'slojd-och-hantverk-i-byn', title: 'Slöjd och hantverk i byn' },
+      { id: 'hemgiften', title: 'Hemgiften' },
+      { id: 'till-amerika', title: 'Till Amerika' }
+    ],
+    'Marknaden': [
+      { id: 'antligen-marknad', title: 'Äntligen marknad' },
+      { id: 'dalfolkets-langa-vandringar', title: 'Dalfolkets långa vandringar' },
+      { id: 'varor-fran-nar-och-fjarran', title: 'Varor från när och fjärran' },
+      { id: 'marknaden-blir-ett-nojesfalt', title: 'Marknaden blir ett nöjesfält' }
+    ],
+    'Framtidslandet': [
+      { id: 'samisk-renskotsel-och-undantrangning', title: 'Samisk renskötsel och undanträngning' },
+      { id: 'johan-turi-och-samernas-liv', title: 'Johan Turi och samernas liv' },
+      { id: 'rorelser-i-norr', title: 'Rörelser i norr' },
+      { id: 'norrlands-slumrande-skatter', title: 'Norrlands slumrande skatter' },
+      { id: 'fran-byn-till-industriorten', title: 'Från byn till industriorten' },
+      { id: 'trapatroner-sagverk-och-arbetarrorelse', title: 'Träpatroner, sågverk och arbetarrörelse' }
+    ],
+    'Bönehuset': [
+      { id: 'bibeln-utspelar-sig-i-bondens-hem', title: 'Bibeln utspelar sig i bondens hem' },
+      { id: 'religionsfrihet-i-norden', title: 'Religionsfrihet i Norden' },
+      { id: 'ratten-till-en-egen-tro', title: 'Rätten till en egen tro' },
+      { id: 'gemensam-kamp-mot-fylleriet', title: 'Gemensam kamp mot fylleriet' }
+    ],
+    'Kaféet': [
+      { id: 'en-publik-salong', title: 'En publik salong' },
+      { id: 'bonbons-bakelser-och-raffinerade-drycker', title: 'Bonbons, bakelser och raffinerade drycker' }
+    ],
+    'Fosterlandet': [
+      { id: 'nationen-och-naturen', title: 'Nationen och naturen' },
+      { id: 'folklig-kultur-och-rattvisa', title: 'Folklig kultur och rättvisa' },
+      { id: 'raslaran-och-folket', title: 'Rasläran och folket' }
+    ]
+  },
+  '1900': {
+    'Ritbordet': [
+      { id: 'bostadsfragan-pa-agendan', title: 'Bostadsfrågan på agendan' },
+      { id: 'vita-rockar-stoppur-och-linjaler', title: 'Vita rockar, stoppur och linjaler' },
+      { id: 'befolkningspolitik', title: 'Befolkningspolitik' }
+    ],
+    'Kriget': [
+      { id: 'civilsamhallets-vardag', title: 'Civilsamhällets vardag' },
+      { id: 'flykt-motstand-och-diplomati', title: 'Flykt, motstånd och diplomati' }
+    ],
+    'Rekordåren': [
+      { id: 'tonaringen-och-den-lyckliga-ungdomstiden', title: 'Tonåringen och den lyckliga ungdomstiden' },
+      { id: 'karnfamiljen-i-valfardssverige', title: 'Kärnfamiljen i välfärdssverige' },
+      { id: 'konsrollerna-i-familjen', title: 'Könsrollerna i familjen' }
+    ],
+    'Välfärdslandet': [
+      { id: 'tre-rum-och-kok', title: 'Tre rum och kök' },
+      { id: 'tillsammans-for-en-battre-varld', title: 'Tillsammans för en bättre värld' },
+      { id: 'slalom-sameslojd-oljekris', title: 'Slalom, sameslöjd, oljekris' },
+      { id: 'mot-nya-aventyr', title: 'Mot nya äventyr' }
+    ]
+  },
+  '2000': {
+    'Samtiden': [
+      { id: 'vilse-i-ett-forandrat-klimat', title: 'Vilse i ett förändrat klimat' },
+      { id: 'leva-tillsammans-i-norden', title: 'Leva tillsammans i Norden' },
+      { id: 'varldlig-tro-och-andlig-frihet', title: 'Världslig tro och andlig frihet' }
+    ]
+  }
 };
 
 class KioskApp {
@@ -154,19 +203,24 @@ class KioskApp {
   renderMenuContent() {
     let html = '';
 
-    for (const [century, themes] of Object.entries(THEMES_BY_CENTURY)) {
+    for (const [century, rooms] of Object.entries(THEMES_DATA)) {
       html += `
         <section class="menu-century">
-          <h3 class="menu-century__header">${century}</h3>
-          <ul class="menu-century__list">
-            ${themes.map(theme => `
-              <li class="menu-century__item">
-                <a href="#/" class="menu-century__link${theme.active ? ' is-active' : ''}" data-theme="${theme.id}">
-                  ${theme.title}
-                </a>
-              </li>
-            `).join('')}
-          </ul>
+          <h3 class="menu-century__header">${century}-tal</h3>
+          ${Object.entries(rooms).map(([roomName, themes]) => `
+            <div class="menu-room">
+              <h4 class="menu-room__header">${roomName}</h4>
+              <ul class="menu-room__list">
+                ${themes.map(theme => `
+                  <li class="menu-room__item">
+                    <a href="#/" class="menu-room__link${theme.active ? ' is-active' : ''}" data-theme="${theme.id}">
+                      ${theme.title}
+                    </a>
+                  </li>
+                `).join('')}
+              </ul>
+            </div>
+          `).join('')}
         </section>
       `;
     }
