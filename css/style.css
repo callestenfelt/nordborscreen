@@ -3,31 +3,31 @@
    =========================================== */
 
 :root {
-  /* Colors - 1500-tal theme (Nordiska museet guide) */
-  --color-bg: #FAF5EB;
-  --color-surface: #f0e9db;
-  --color-surface-hover: #e6dfd0;
-  --color-text: #000000;
-  --color-text-muted: #333333;
-  --color-accent: #008018;
-  --color-accent-light: #e8f5ea;
-  --color-border: #008018;
-  --color-timeline-line: #000000;
-  --color-timeline-active: #008018;
+  /* Colors - 1500-tal theme */
+  --color-bg: #008018;
+  --color-text: #faf5eb;
+  --color-text-muted: rgba(250, 245, 235, 0.7);
+  --color-surface: rgba(250, 245, 235, 0.1);
+  --color-surface-hover: rgba(250, 245, 235, 0.2);
+  --color-accent: #faf5eb;
+  --color-border: rgba(250, 245, 235, 0.3);
+  --color-divider: #faf5eb;
 
-  /* All century colors for reference */
-  --color-1500: #008018;
-  --color-1500-bg: #FAF5EB;
-  --color-1600: #AA91FF;
-  --color-1600-bg: #370518;
-  --color-1700: #98CDB2;
-  --color-1700-bg: #0202EA;
-  --color-1800: #4B0A23;
-  --color-1800-bg: #FF4629;
-  --color-1900: #5A6950;
-  --color-1900-bg: #FFFA00;
-  --color-2000: #FFB9FF;
-  --color-2000-bg: #6F430C;
+  /* Button colors */
+  --button-bg: #faf5eb;
+  --button-text: #008018;
+
+  /* Selection */
+  --selection-bg: #faf5eb;
+  --selection-text: #008018;
+
+  /* All century themes for reference */
+  /* 1500: bg #008018, text #faf5eb */
+  /* 1600: bg #AA91FF, text #4b0a23 */
+  /* 1700: bg #98cdb2, text #1414ff */
+  /* 1800: bg #4b0a23, text #ff4629 */
+  /* 1900: bg #5a6950, text #fffa00 */
+  /* 2000: bg #ffb9ff, text #8c550f */
 
   /* Typography */
   --font-family: 'Roboto', system-ui, -apple-system, sans-serif;
@@ -48,12 +48,20 @@
   /* Layout */
   --kiosk-width: 1080px;
   --kiosk-height: 1920px;
-  --content-padding: 48px;
-  --card-gap: 20px;
+  --content-padding: 40px;
+  --card-gap: 16px;
+  --card-gap-tight: 10px;
   --card-radius: 12px;
 
   /* Touch */
   --touch-target-min: 48px;
+  --focus-ring: 3px;
+}
+
+/* Selection styling */
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
 }
 
 /* Reset */
@@ -98,16 +106,16 @@ body {
 }
 
 .page::-webkit-scrollbar {
-  width: 8px;
+  width: 10px;
 }
 
 .page::-webkit-scrollbar-track {
-  background: var(--color-surface);
+  background: transparent;
 }
 
 .page::-webkit-scrollbar-thumb {
-  background: var(--color-border);
-  border-radius: 4px;
+  background: rgba(250, 245, 235, 0.25);
+  border-radius: 999px;
 }
 
 /* ===========================================
@@ -170,17 +178,12 @@ body {
 
 /* Section Headers */
 .section-header {
-  font-size: var(--font-size-body);
-  font-weight: 600;
+  font-size: var(--font-size-subheading);
+  font-weight: 500;
   color: var(--color-text);
   margin-bottom: var(--spacing-md);
-  padding-top: var(--spacing-lg);
-  border-top: 1px solid var(--color-border);
-}
-
-.theme-header + section .section-header {
-  border-top: none;
-  padding-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
 }
 
 /* ===========================================
@@ -190,24 +193,29 @@ body {
 .object-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--card-gap);
+  gap: var(--card-gap-tight);
   margin-bottom: var(--spacing-xl);
 }
 
 .object-card {
-  background: var(--color-bg);
+  background: var(--color-surface);
   border-radius: var(--card-radius);
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, border-color 0.2s ease;
   min-height: var(--touch-target-min);
-  border: 1px solid var(--color-border);
+  border: 2px solid transparent;
 }
 
 .object-card:hover,
 .object-card:active {
   transform: scale(1.02);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border-color: var(--color-border);
+}
+
+.object-card:focus-visible {
+  outline: var(--focus-ring) solid var(--color-accent);
+  outline-offset: 4px;
 }
 
 .object-card__image {
@@ -246,7 +254,12 @@ body {
 }
 
 .object-rail::-webkit-scrollbar {
-  display: none;
+  height: 10px;
+}
+
+.object-rail::-webkit-scrollbar-thumb {
+  background: rgba(250, 245, 235, 0.25);
+  border-radius: 999px;
 }
 
 .object-rail .object-card {
@@ -263,26 +276,25 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-70%);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  color: var(--color-text);
+  width: 56px;
+  height: 56px;
+  border-radius: var(--card-radius);
+  background: var(--button-bg);
+  border: 2px solid var(--button-bg);
+  color: var(--button-text);
   font-size: 28px;
-  font-weight: 300;
+  font-weight: 700;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   z-index: 10;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .rail-arrow:hover {
-  background: var(--color-surface);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: transparent;
+  color: var(--button-bg);
 }
 
 .rail-arrow--left {
@@ -296,7 +308,11 @@ body {
 .rail-arrow:disabled {
   opacity: 0.3;
   cursor: not-allowed;
-  box-shadow: none;
+}
+
+.rail-arrow:focus-visible {
+  outline: var(--focus-ring) solid currentColor;
+  outline-offset: 4px;
 }
 
 /* ===========================================
@@ -311,25 +327,32 @@ body {
 .back-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: var(--spacing-xs);
   padding: var(--spacing-sm) var(--spacing-md);
-  background: var(--color-bg);
-  border: 1px solid var(--color-border);
-  border-radius: 999px;
-  color: var(--color-text);
+  background: var(--button-bg);
+  border: 2px solid var(--button-bg);
+  border-radius: var(--card-radius);
+  color: var(--button-text);
   font-family: var(--font-family);
   font-size: var(--font-size-body);
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   margin-bottom: var(--spacing-lg);
   min-height: var(--touch-target-min);
+  text-transform: uppercase;
 }
 
 .back-button:hover,
 .back-button:active {
-  background: var(--color-surface);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: transparent;
+  color: var(--button-bg);
+}
+
+.back-button:focus-visible {
+  outline: var(--focus-ring) solid currentColor;
+  outline-offset: 4px;
 }
 
 .back-button__icon {
@@ -374,32 +397,35 @@ body {
 
 .timeline {
   position: relative;
+  border-radius: var(--card-radius);
+  padding: var(--spacing-sm);
+  background: var(--color-surface);
 }
 
 .timeline-ruler {
-  height: 15px;
-  border-bottom: 1px solid var(--color-text);
+  height: 18px;
+  border-bottom: 1px solid currentColor;
   width: 100%;
   display: flex;
   position: relative;
 }
 
 .timeline-ruler__segment {
-  border-right: 1px solid var(--color-text);
+  border-right: 1px solid currentColor;
   height: 100%;
   flex: 1;
 }
 
 .timeline-ruler__segment:first-child {
-  border-left: 1px solid var(--color-text);
+  border-left: 1px solid currentColor;
 }
 
 .timeline-ruler__marker {
   position: absolute;
   bottom: 0;
-  border-top: 2px solid var(--color-accent);
+  border-top: 2px solid var(--color-text);
   height: 40px;
-  background-color: rgba(0, 128, 24, 0.15);
+  background-color: rgba(250, 245, 235, 0.2);
 }
 
 .timeline-legend {
@@ -410,14 +436,9 @@ body {
 }
 
 .timeline-period {
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-caption);
   font-weight: 500;
   color: var(--color-text);
-}
-
-.timeline-period--active {
-  color: var(--color-accent);
-  font-weight: 700;
 }
 
 /* Object Meta */
