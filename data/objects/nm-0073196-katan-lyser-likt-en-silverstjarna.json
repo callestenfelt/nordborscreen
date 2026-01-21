@@ -1,0 +1,44 @@
+{
+  "id": "nm-0073196-katan-lyser-likt-en-silverstjarna",
+  "title": "Kåtan lyser likt en silverstjärna",
+  "objectNumber": "NM.0073196",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/67929-20240220154305-default.webp",
+    "https://guide.nordiskamuseet.se/media/67929-20240220154305-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24742-20231009151909-default.webp",
+    "https://guide.nordiskamuseet.se/media/24742-20231009151909-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/67929-20240220154305-thumbnail.webp",
+  "intro": "Elddonspung med eldstål, 1800-tal, Njavve, Lule lappmark, Sverige, NM.0073196 15001599 1860 – 1891 Varje familj och kåta har sin egen árran (eldstad). Kommer man till ett nytt ställe så gör man en ny, andras árran ska lämnas ifred. Elden i árran släcks inte, under natten så får en tjåsskå (stock) glöda. Glöden ger den bästa värmen. Är det riktigt kallt ute så brinner tre tjåsskå under natten. Sover man utomhus på vintern så gör man en nuorssjo, stockeld. Två torrfuror, som sakta brinner hela natten och värmer de sovande. Den livsviktiga eldkunskapen traderas från generation till generation.Elddonspungen är tillverkad av rött och svart ylle, fodrad och kantad med skinn. Inkom till Nordiska museet 1891.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

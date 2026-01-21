@@ -1,0 +1,44 @@
+{
+  "id": "nm-0068058a-maljor",
+  "title": "Maljor",
+  "objectNumber": "NM.0068058",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24251-20231009101743-default.webp",
+    "https://guide.nordiskamuseet.se/media/24251-20231009101743-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24252-20231009101743-default.webp",
+    "https://guide.nordiskamuseet.se/media/24252-20231009101743-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24251-20231009101743-thumbnail.webp",
+  "intro": "Dessa maljor är dekorerade med ett krönt Ave Maria-monogram.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

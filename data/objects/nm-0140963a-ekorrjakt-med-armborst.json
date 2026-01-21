@@ -1,0 +1,48 @@
+{
+  "id": "nm-0140963a-ekorrjakt-med-armborst",
+  "title": "Ekorrjakt med armborst",
+  "objectNumber": "NM.0140963A",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/5251-20221110150333-default.webp",
+    "https://guide.nordiskamuseet.se/media/5251-20221110150333-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5252-20221110150338-default.webp",
+    "https://guide.nordiskamuseet.se/media/5252-20221110150338-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5253-20221110150339-default.webp",
+    "https://guide.nordiskamuseet.se/media/5253-20221110150339-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/25233-20231011091449-default.webp",
+    "https://guide.nordiskamuseet.se/media/25233-20231011091449-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/5251-20221110150333-thumbnail.webp",
+  "intro": "Detta armborst har använts som jaktvapen, bland annat för jakt på ekorre. Vid ekorrjakt var det viktigt att inte förstöra djurets päls och därför användes generellt trubbiga pilar som kallades kolvar och det bästa var att skjuta ekorren i huvudet. Jakt på ekorre var utmärkt för unga jägare för att öva upp sina färdigheter. Gråverk är pälsverk av ekorrens ljusa vinterpäls som var en viktig handelsvara under 1500-talet. Även skatt betalades i pälsverk.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

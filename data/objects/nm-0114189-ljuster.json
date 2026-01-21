@@ -1,0 +1,41 @@
+{
+  "id": "nm-0114189-ljuster",
+  "title": "Ljuster",
+  "objectNumber": "NM.0114189",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24278-20231009101745-default.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24278-20231009101745-thumbnail.webp",
+  "intro": "Ljuster, Stensele, Lycksele lappmark, Sverige, NM.0114189 15001599 1800 – 1909 Ljusterfiske är en gammal fångstmetod. De förhistoriska ljustren var gjorda av horn och ben, senare i metall. Ljustret sitter på ett långt skaft och används till att spetsa fisken. Fiske har genom historien varit en viktig näring för samer, för vissa den huvudsakliga näringen. Under 1500-talet exporterades stora mängder torrfisk med skepp från Bottenviken ner till Stockholm.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "nm-0091088-vargspjut",
+  "title": "Vargspjut",
+  "objectNumber": "NM.0091088",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/69234-20240308152753-default.webp",
+    "https://guide.nordiskamuseet.se/media/69234-20240308152753-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5244-20221110150325-default.webp",
+    "https://guide.nordiskamuseet.se/media/5244-20221110150325-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5245-20221110150326-default.webp",
+    "https://guide.nordiskamuseet.se/media/5245-20221110150326-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5246-20221110150327-default.webp",
+    "https://guide.nordiskamuseet.se/media/5246-20221110150327-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/69234-20240308152753-thumbnail.webp",
+  "intro": "Vargspjut, 1800-tal, Njavve, Jokkmokk, Sverige, NM.0091088 Vargspjut 15001599 1800 – 1901 Spjutet står upptaget som vargspjut men är till typen ett björnspjut. Den kraftiga spjutspetsen har den karaktäristiska rombiska genomskärningen som björnspjuten har. Skaftet i björk och kraftigt utformat. I frampartiet under spjutspetsen sitter en decimeterbred mässingsholk. I bakänden är det en holk som är tillverkad av järn. I bakänden en doppsko för att spjutet ska få fäste utan att glida. Trots att det är fråga om ett björnspjut står det antecknat i Nordiska museets katalog att \"härmed har dödats 3 vargar\".",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

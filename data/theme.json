@@ -1,0 +1,198 @@
+{
+  "title": "Samerna handlar med dyra pälsverk",
+  "ingress": "Hemma i kåtan i Tingevaara syr Inga bällingskor. Hon har blivit rik på renskötsel och pälshandel men fogdarna kräver allt högre skatter.",
+  "primaryObjects": [
+    {
+      "id": "nm-0228875-sieidi",
+      "title": "Sieidi",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24313-20231009101748-thumbnail.webp"
+    },
+    {
+      "id": "nm-0068068a-silverhangknappar",
+      "title": "Silverhängknappar",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24259-20231009101744-thumbnail.webp"
+    },
+    {
+      "id": "nm-0005649-rotslojd-hantverk-med-gamla-anor",
+      "title": "Rotslöjd - hantverk med gamla anor",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/78957-20240520113759-thumbnail.webp"
+    },
+    {
+      "id": "nm-0073196-katan-lyser-likt-en-silverstjarna",
+      "title": "Kåtan lyser likt en silverstjärna",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/67929-20240220154305-thumbnail.webp"
+    },
+    {
+      "id": "nm-0114189-ljuster",
+      "title": "Ljuster",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24278-20231009101745-thumbnail.webp"
+    },
+    {
+      "id": "nm-0120985-gierhkeme-barnvagga",
+      "title": "Gïerhkeme - barnvagga",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24282-20231009101745-thumbnail.webp"
+    },
+    {
+      "id": "nm-0228873-viejhke-framtidstydare",
+      "title": "Viejhke - framtidstydare",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24310-20231009101748-thumbnail.webp"
+    },
+    {
+      "id": "nm-0334757a-handeln-gar-mellan-ost-och-vast",
+      "title": "Handeln går mellan öst och väst",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24329-20231009101751-thumbnail.webp"
+    },
+    {
+      "id": "nm-0140963a-ekorrjakt-med-armborst",
+      "title": "Ekorrjakt med armborst",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/5251-20221110150333-thumbnail.webp"
+    }
+  ],
+  "secondaryObjects": [
+    {
+      "id": "nm-0068053a-forgyllda-baltesbeslag",
+      "title": "Förgyllda bältesbeslag",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24221-20231009101742-thumbnail.webp"
+    },
+    {
+      "id": "nm-0306778-torkat-renblod-i-natmage",
+      "title": "Torkat renblod i nätmage",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24325-20231009101749-thumbnail.webp"
+    },
+    {
+      "id": "nm-0029031-tjelmeraggeng-ogoninstrument",
+      "title": "Tjelmeraggeng - ögoninstrument",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24205-20231009101735-thumbnail.webp"
+    },
+    {
+      "id": "nm-0004021-oronslev",
+      "title": "Öronslev",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24188-20231009101731-thumbnail.webp"
+    },
+    {
+      "id": "nm-0231727-geres-ackja",
+      "title": "Geres - ackja",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24318-20231009101749-thumbnail.webp"
+    },
+    {
+      "id": "nmab-1500-103-vinterlager",
+      "title": "Vinterläger",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69268-20240308154902-thumbnail.webp"
+    },
+    {
+      "id": "nmab-1500-102-lat-oss-driva-renhjorden-till-vila-pa-myren",
+      "title": "\"Låt oss driva renhjorden till vila på myren!\"",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69273-20240308155056-thumbnail.webp"
+    },
+    {
+      "id": "nmab-1500-101-vargar-i-renhjorden",
+      "title": "Vargar i renhjorden",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69263-20240308154713-thumbnail.webp"
+    },
+    {
+      "id": "nmrekv-nordbor-0040-hermelinpalsar",
+      "title": "Hermelinpälsar",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24367-20231009101754-thumbnail.webp"
+    },
+    {
+      "id": "nmrekv-nordbor-0037-graskinn-ekorrpalsar",
+      "title": "Gråskinn - ekorrpälsar",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24358-20231009101753-thumbnail.webp"
+    },
+    {
+      "id": "nmrekv-nordbor-0034-ravskinn",
+      "title": "Rävskinn",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24349-20231009101752-thumbnail.webp"
+    },
+    {
+      "id": "nmrekv-nordbor-0033-baverpals",
+      "title": "Bäverpäls",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24346-20231009101752-thumbnail.webp"
+    },
+    {
+      "id": "nmrekv-nordbor-0002-ripan-ar-spaman",
+      "title": "Ripan är spåman",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69245-20240308153627-thumbnail.webp"
+    },
+    {
+      "id": "nm-0192594-jarvspjut",
+      "title": "Järvspjut",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69228-20240308151927-thumbnail.webp"
+    },
+    {
+      "id": "nm-0091088-vargspjut",
+      "title": "Vargspjut",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69234-20240308152753-thumbnail.webp"
+    },
+    {
+      "id": "nm-0088989-jaktspjut",
+      "title": "Jaktspjut",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69238-20240308153228-thumbnail.webp"
+    },
+    {
+      "id": "nm-0068058a-maljor",
+      "title": "Maljor",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24251-20231009101743-thumbnail.webp"
+    },
+    {
+      "id": "nm-0049492-silversked",
+      "title": "Silversked",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/5299-20221110151353-thumbnail.webp"
+    },
+    {
+      "id": "nm-0016259-renskinnshandskar",
+      "title": "Renskinnshandskar",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69258-20240308154514-thumbnail.webp"
+    },
+    {
+      "id": "nm-0011502a-silverknappar",
+      "title": "Silverknappar",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24195-20231009101732-thumbnail.webp"
+    },
+    {
+      "id": "nm-0192603-kopparkittel",
+      "title": "Kopparkittel",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24305-20231009101747-thumbnail.webp"
+    },
+    {
+      "id": "nm-0067743-silverbrosch",
+      "title": "Silverbrosch",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24218-20231009101737-thumbnail.webp"
+    },
+    {
+      "id": "nm-0177644-trummans-varld",
+      "title": "Trummans värld",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69295-20240308160245-thumbnail.webp"
+    },
+    {
+      "id": "nm-0223597a-2-torkad-fisk",
+      "title": "Torkad fisk",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/25914-20231012151018-thumbnail.webp"
+    },
+    {
+      "id": "nm-0072900-svavelkopp",
+      "title": "Svavelkopp",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24266-20231009101744-thumbnail.webp"
+    },
+    {
+      "id": "nm-0055826a-skidor",
+      "title": "Skidor",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24212-20231009101736-thumbnail.webp"
+    },
+    {
+      "id": "nm-0228871-trumhammare",
+      "title": "Trumhammare",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/24308-20231009101748-thumbnail.webp"
+    },
+    {
+      "id": "nm-0011500a-silverknappar",
+      "title": "Silverknappar",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69250-20240308153901-thumbnail.webp"
+    },
+    {
+      "id": "nm-0234734-mjolpase-i-skinn",
+      "title": "Mjölpåse i skinn",
+      "thumbnail": "https://guide.nordiskamuseet.se/media/69290-20240308160010-thumbnail.webp"
+    }
+  ]
+}

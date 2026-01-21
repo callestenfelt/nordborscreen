@@ -1,0 +1,44 @@
+{
+  "id": "nm-0068068a-silverhangknappar",
+  "title": "Silverhängknappar",
+  "objectNumber": "NM.0068068A",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24259-20231009101744-default.webp",
+    "https://guide.nordiskamuseet.se/media/24259-20231009101744-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/26197-20231013134047-default.webp",
+    "https://guide.nordiskamuseet.se/media/26197-20231013134047-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24259-20231009101744-thumbnail.webp",
+  "intro": "Hängknapp, Arjeplog, Pite lappmark, Sverige, NM.0068068A 15001599 1700 – 1891 Under 1500-talet är det högkonjunktur för fjällsamerna i Sverige, och Torne lappmark där Inga bor är ett särskilt rikt område. Med ackjor tungt lastade med renskinn och gråverk drar de ner till norska kusten för att bedriva handel. Där införskaffas både nödvändiga varor och lyxartiklar som silver. Silver är klokt att investera i, det är lätt att bära med sig och även lätt att gömma vid behov. När det är dags för bröllop eller marknad så pyntar man sig med vackra silverbälten och silverkragar.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

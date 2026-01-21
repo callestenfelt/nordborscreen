@@ -1,0 +1,46 @@
+{
+  "id": "nm-0228875-sieidi",
+  "title": "Sieidi",
+  "objectNumber": "NM.0228875",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24313-20231009101748-default.webp",
+    "https://guide.nordiskamuseet.se/media/24313-20231009101748-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24314-20231009101748-default.webp",
+    "https://guide.nordiskamuseet.se/media/24314-20231009101748-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24315-20231009101748-default.webp",
+    "https://guide.nordiskamuseet.se/media/24315-20231009101748-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24313-20231009101748-thumbnail.webp",
+  "intro": "\"Djuren och träden och stenarna och andra ting har mist förmågan att tala, men de ha fortfarande förmågan att höra och förstå.\"(Johan Turi, samisk författare)Prästen Olaus Petri Niurenius beskriver sejtar på 1620-talet: \"Samernas gud var liksom flera andra folkslags formad av sten lik en fågel.\" Kanske var det mig han beskrev. Första gången någon skriver om mig är 1673 i Johannes Schefferus bok Lapponia. I Antikvitetskollegiets samlingar finns en anteckning: \"I 1693 års inventarium vi finna en Lappafgudh af steen\". Varifrån jag kommer eller hur gammal jag är står inte att finna i anteckningarna.Många av föremålen i Antikvitetskollegiets samlingar hamnade sedermera på Historiska museet, så även jag. 1943 förflyttas jag till Nordiska museet. Jag sorteras in under kategorin magi och kult. Nu är jag här, i utställningen Nordbor. Hur framtiden ser ut för mig vet jag inte, men jag fortsätter att lyssna.Sejte är ett komplext begrepp, betydelsen har varierat mellan olika tider och platser. En sejte har beskrivits som ett kultobjekt i trä eller sten. Ofta har de speciella former som kan påminna om människa, djur eller något annat. Ibland har mänsklig hand förstärkt vissa former men oftast är det naturen som format sejten. Vissa sejter var en klippa eller ett helt fjäll som fanns på strategiska ställen för jägaren, fiskaren eller renskötaren. Man offrade kollektivt eller enskilt vid en sejte av sitt jaktbyte eller fiskfångst, särskilt vid jakt- och fiskesäsongens början, för att få en lyckosam jakt eller fångst i framtiden.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

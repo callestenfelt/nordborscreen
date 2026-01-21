@@ -1,0 +1,44 @@
+{
+  "id": "nm-0306778-torkat-renblod-i-natmage",
+  "title": "Torkat renblod i nätmage",
+  "objectNumber": "NM.0306778",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24325-20231009101749-default.webp",
+    "https://guide.nordiskamuseet.se/media/24325-20231009101749-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24326-20231009101750-default.webp",
+    "https://guide.nordiskamuseet.se/media/24326-20231009101750-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24325-20231009101749-thumbnail.webp",
+  "intro": "Nätmage med torkat renblod, Porjus, Jokkmokk, Sverige, NM.0306778 Blod som man vill bevara länge, tar man under vinterslakten. Blodet förvaras i renens nätmage, den hänger man för att torka hela vintern. Blodet är som pulver. När man vill använda det hackar man lös en bit och löser upp det med vatten. Av renblod kan man göra blodpannkakor eller blodkams (blodpalt). Blodmat är mycket järnrik.Inköpt 1980 av Tomas Partapuoli.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

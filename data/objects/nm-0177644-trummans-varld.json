@@ -1,0 +1,50 @@
+{
+  "id": "nm-0177644-trummans-varld",
+  "title": "Trummans värld",
+  "objectNumber": "NM.0177644",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/69295-20240308160245-default.webp",
+    "https://guide.nordiskamuseet.se/media/69295-20240308160245-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5368-20221110151953-default.webp",
+    "https://guide.nordiskamuseet.se/media/5368-20221110151953-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24297-20231009101747-default.webp",
+    "https://guide.nordiskamuseet.se/media/24297-20231009101747-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24298-20231009101747-default.webp",
+    "https://guide.nordiskamuseet.se/media/24298-20231009101747-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24299-20231009101747-default.webp",
+    "https://guide.nordiskamuseet.se/media/24299-20231009101747-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/69295-20240308160245-thumbnail.webp",
+  "intro": "Trumma, tagen i beslag av svenska staten under 1700-tal, NM.0177644 15001599 1650 – 1725 Det finns två olika konstruktioner av trummor, ramtrummor och skåltrummor. Skåltrumman återfinns endast hos samerna. Genom att tyda motiven kan man dela in trummorna grovt i tre typer, sydsamiska som har ett rutkors i mitten som symboliserar biejjie, solen, centralsamiska (ume-, pite- och lulesamiska) med trumskinnet indelat i två fält och med ett rutkors eller solsymbol i det nedre och de nordsamiska med tre eller fem fält.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

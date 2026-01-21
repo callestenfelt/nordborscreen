@@ -1,0 +1,44 @@
+{
+  "id": "nm-0011502a-silverknappar",
+  "title": "Silverknappar",
+  "objectNumber": "NM.0011502",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24195-20231009101732-default.webp",
+    "https://guide.nordiskamuseet.se/media/24195-20231009101732-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/69253-20240308154051-default.webp",
+    "https://guide.nordiskamuseet.se/media/69253-20240308154051-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24195-20231009101732-thumbnail.webp",
+  "intro": "Silverknappar, Arjeplogs lappmark, Sverige, NM.0011502 Ett par silverknappar som varit fastsydda på en silverkrage.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

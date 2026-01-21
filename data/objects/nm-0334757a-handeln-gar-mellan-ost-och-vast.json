@@ -1,0 +1,44 @@
+{
+  "id": "nm-0334757a-handeln-gar-mellan-ost-och-vast",
+  "title": "Handeln går mellan öst och väst",
+  "objectNumber": "NM.00334757A",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24329-20231009101751-default.webp",
+    "https://guide.nordiskamuseet.se/media/24329-20231009101751-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/25154-20231010161942-default.webp",
+    "https://guide.nordiskamuseet.se/media/25154-20231010161942-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24329-20231009101751-thumbnail.webp",
+  "intro": "Det är ont om tid, dagarna är korta nu och polarnatten är snart över dem. Renrajden väntar otåligt, det är besvärligt för renarna att ta sig fram i mörkret och kylan. Nu är tid att åka till marknaden. Ackjorna är packade med renhudar, torrfisk, skinn av ekorre, bäver, lo, varg och hermelin och de eftertraktade varma bällingskorna och renskinnshandskarna. Birkarlarna kommer att ta med sig samernas varorna västerut, mot norska atlantkusten. På hemvägen är ackjorna fyllda med koppar- och silverföremål, salt, hampa, smör och ulltyget vadmal.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

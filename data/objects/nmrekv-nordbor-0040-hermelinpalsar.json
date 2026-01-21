@@ -1,0 +1,41 @@
+{
+  "id": "nmrekv-nordbor-0040-hermelinpalsar",
+  "title": "Hermelinpälsar",
+  "objectNumber": "",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24367-20231009101754-default.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24367-20231009101754-thumbnail.webp",
+  "intro": "Under 1500-talet är efterfrågan på hermelinens päls hög, det beror framförallt på att pälsen är högsta mode bland kungligheter i Europa. Hermelin fångas med fällor för att inte skada pälsen. Oftast användes en hermelinstock, som bestod av av en bräda belastad med sten. Under brädet lades betet ut, som smågnagare, en fisk- eller köttbit.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

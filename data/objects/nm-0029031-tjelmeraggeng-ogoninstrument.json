@@ -1,0 +1,44 @@
+{
+  "id": "nm-0029031-tjelmeraggeng-ogoninstrument",
+  "title": "Tjelmeraggeng - ögoninstrument",
+  "objectNumber": "NM.0029031",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24205-20231009101735-default.webp",
+    "https://guide.nordiskamuseet.se/media/24205-20231009101735-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24206-20231009101735-default.webp",
+    "https://guide.nordiskamuseet.se/media/24206-20231009101735-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24205-20231009101735-thumbnail.webp",
+  "intro": "Ögoninstrument, 1880, Åsele, Vilhelmina Lappmark, NM.0029031 15001599 1850 – 1880 Att få elden att brinna är livsviktigt. Elden ger både värme och möjlighet till att laga mat. Men elden ger också rök, elden är lynnig. Är det lågtryck eller om veden är sur så kan det bli rökigt i tältkåtan. Då lägger man sig snabbt ner på fällarna och väntar tills röken skingras.Tjelmeraggeng (ögoninstrument) användes till att få bort sot och tårar från ögonen.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

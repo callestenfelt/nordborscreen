@@ -1,0 +1,46 @@
+{
+  "id": "nm-0005649-rotslojd-hantverk-med-gamla-anor",
+  "title": "Rotslöjd - hantverk med gamla anor",
+  "objectNumber": "NM.0005649",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/78957-20240520113759-default.webp",
+    "https://guide.nordiskamuseet.se/media/78957-20240520113759-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/29714-20231024105335-default.webp",
+    "https://guide.nordiskamuseet.se/media/29714-20231024105335-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/78953-20240520112844-default.webp",
+    "https://guide.nordiskamuseet.se/media/78953-20240520112844-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/78957-20240520113759-thumbnail.webp",
+  "intro": "Flaska, 1800-tal, Malå, Pite lappmark, Sverige, NM.0005649 Flaska 15001599 1840 – 1874 Samernas rothantverk uppmärksammades redan i Johannes Schefferus bok Lapponia från 1673. Konsten att binda rotkorgar är ”för samerna säregen och överallt känd, enär intet annat folk finnes, som kan tävla med dem härutinnan”, skriver han.Rotkorgarna har använts för förvaring av ömtåliga saker under transport i ackja eller klövjekorg. Rotflaskorna förvarade man salt i och ostformarnas vackra mönster överfördes till ren- och getostarna vid osttillverkning. Rotslöjd var ett hantverk på väg att dö ut, men genom bland annat konsthantverkaren Asa Kitok (1894–1986) i Gällivare och hennes döttrar, överlevde kunskapen och lever idag vidare.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

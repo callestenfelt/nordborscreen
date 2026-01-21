@@ -1,0 +1,44 @@
+{
+  "id": "nmab-1500-103-vinterlager",
+  "title": "Vinterläger",
+  "objectNumber": "",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/69268-20240308154902-default.webp",
+    "https://guide.nordiskamuseet.se/media/69268-20240308154902-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24340-20231009101752-default.webp",
+    "https://guide.nordiskamuseet.se/media/24340-20231009101752-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/69268-20240308154902-thumbnail.webp",
+  "intro": "Teckning av Nils Nilsson Skum, 1940-tal, NMAB.1500.103 15001599 1936 – 1938 \"Man har nu slaktat, vad som behövs för våren och sommaren, och köttet skall fraktas till en köttbod att förvaras över vintern. Två män fara med köttrajden. Sist i rajden drages skinnackjan, som är stor och skrymmande. Även skinn lämnas i förvar, därför att man om våren och sommaren behöver sådana att ligga på och till klövjeunderlag på härkarna. Vidare får man ta håret av den del skinn och garva dem, ty man behöver läder. På de trebenta slaktställningarna hänga köttstycken och blodmagar.\" (Ur Same sita - lappbyn, av Nils Nilsson Skum & Ernst Manker 1938)",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

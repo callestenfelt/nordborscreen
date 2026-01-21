@@ -1,0 +1,41 @@
+{
+  "id": "nmrekv-nordbor-0002-ripan-ar-spaman",
+  "title": "Ripan är spåman",
+  "objectNumber": "",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/69245-20240308153627-default.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/69245-20240308153627-thumbnail.webp",
+  "intro": "\"Ripan är spåman. När ripan skrattar i aftonskymningen blir det snöyra, och när ripan skrockar, så kommer det bara snö och inte blåst.\" (Johan Turi)",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

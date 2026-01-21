@@ -1,0 +1,46 @@
+{
+  "id": "nm-0011500a-silverknappar",
+  "title": "Silverknappar",
+  "objectNumber": "NM.0011500A",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/69250-20240308153901-default.webp",
+    "https://guide.nordiskamuseet.se/media/69250-20240308153901-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5544-20221110153628-default.webp",
+    "https://guide.nordiskamuseet.se/media/5544-20221110153628-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24191-20231009101732-default.webp",
+    "https://guide.nordiskamuseet.se/media/24191-20231009101732-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/69250-20240308153901-thumbnail.webp",
+  "intro": "Silverknappar, Arjeplog, Pite lappmark, Sverige, NM.0011500A Silverknapp som har suttit på en silverkrage.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

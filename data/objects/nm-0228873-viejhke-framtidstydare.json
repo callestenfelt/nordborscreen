@@ -1,0 +1,48 @@
+{
+  "id": "nm-0228873-viejhke-framtidstydare",
+  "title": "Viejhke - framtidstydare",
+  "objectNumber": "NM.0228873",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24310-20231009101748-default.webp",
+    "https://guide.nordiskamuseet.se/media/24310-20231009101748-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5370-20231009101748-default.webp",
+    "https://guide.nordiskamuseet.se/media/5370-20231009101748-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/11911-20230515114517-default.webp",
+    "https://guide.nordiskamuseet.se/media/11911-20230515114517-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/29401-20231023221653-default.webp",
+    "https://guide.nordiskamuseet.se/media/29401-20231023221653-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24310-20231009101748-thumbnail.webp",
+  "intro": "Den samiska trumman hade två funktioner. För nåjden (schamanen) var den ett hjälpmedel för att försätta sig i trans. Med stöd av hjälpandar som var djur så kunde nåjden färdas till andra världar, som gudarnas värld eller dödsriket. Trumman kunde också vara ett instrument som man tydde framtiden med. På trumskinnet hade man ritat den värld man levde i och på det lades en viejhke, en visare. Den kunde vara gjord av horn eller mässing. Medan man slog med trumhammaren på trumman så rörde sig viejhke över skinnet. Genom att se hur den rörde sig över motiven kunde man tyda vad som komma skulle.Denna viejhke har sannolikt samlats in 1725 av superintendent Petrus Asp under en \"visitation\", tillsammans med 25 trummor.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

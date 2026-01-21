@@ -1,0 +1,44 @@
+{
+  "id": "nm-0004021-oronslev",
+  "title": "Öronslev",
+  "objectNumber": "NM.0004021",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24188-20231009101731-default.webp",
+    "https://guide.nordiskamuseet.se/media/24188-20231009101731-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24189-20231009101731-default.webp",
+    "https://guide.nordiskamuseet.se/media/24189-20231009101731-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24188-20231009101731-thumbnail.webp",
+  "intro": "Öronsleven användes till att gröpa ut öronvax och andra orenheter ur öronen. Den har varit i bruk från medeltiden och fram till 1800-talet. Öronsleven NM.0004021 samlades in av paret von Düben som gjorde två längre resor i lappmarkerna mellan 1868-1871. Den är tillverkad i renhorn och mässing.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

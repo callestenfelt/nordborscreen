@@ -1,0 +1,44 @@
+{
+  "id": "nmab-1500-102-lat-oss-driva-renhjorden-till-vila-pa-myren",
+  "title": "\"Låt oss driva renhjorden till vila på myren!\"",
+  "objectNumber": "",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/69273-20240308155056-default.webp",
+    "https://guide.nordiskamuseet.se/media/69273-20240308155056-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24337-20231009101751-default.webp",
+    "https://guide.nordiskamuseet.se/media/24337-20231009101751-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/69273-20240308155056-thumbnail.webp",
+  "intro": "\"Nu flöt renhjorden upp på skaren. Renvaktaren låter den beta skorplavar och ris på de granskogsklädda höjdsträckningar mellan vattendragen och skägglav vid myrkanterna, tills renarna stillat den värsta hungern. Man måste bevaka hjorden mycket försiktigt endast vid kanterna, så att den ej blir skrämd och springer för mycket ihop och ej får tid att snappa i sig lav.\" (Ur Same sita - lappbyn, Nils Nilsson Skum & Ernst Manker 1938).",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

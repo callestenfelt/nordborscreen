@@ -1,0 +1,46 @@
+{
+  "id": "nm-0231727-geres-ackja",
+  "title": "Geres - ackja",
+  "objectNumber": "NM.0231727",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24318-20231009101749-default.webp",
+    "https://guide.nordiskamuseet.se/media/24318-20231009101749-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24319-20231009101749-default.webp",
+    "https://guide.nordiskamuseet.se/media/24319-20231009101749-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24320-20231009101749-default.webp",
+    "https://guide.nordiskamuseet.se/media/24320-20231009101749-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24318-20231009101749-thumbnail.webp",
+  "intro": "Geres, ackja, 1900-tal, Jukkkasjärvi, Kiruna, Sverige, NM.0231727 15001599 1900 – 1940 Ackjan har tidigare ägts av författaren och konstnären Johan Turi.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "nmab-1500-101-vargar-i-renhjorden",
+  "title": "Vargar i renhjorden",
+  "objectNumber": "",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/69263-20240308154713-default.webp",
+    "https://guide.nordiskamuseet.se/media/69263-20240308154713-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24334-20231009101751-default.webp",
+    "https://guide.nordiskamuseet.se/media/24334-20231009101751-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/69263-20240308154713-thumbnail.webp",
+  "intro": "Turi har här tecknat en flock renar, som överfalles av sju vargar; deras sätt att jaga är tydligt angivet: \"De spränga först flocken i flera mindre delar och anfalla så renarna en och en. Dessa fara vettskrämda i väg med tungan hängade ur halsen, huvudet tillbakakastat och svansen rest.\" (ur Muittalus samiid birra, En bok om samernas liv, av Johan Turi 1910)",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

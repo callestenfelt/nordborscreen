@@ -1,0 +1,48 @@
+{
+  "id": "nm-0088989-jaktspjut",
+  "title": "Jaktspjut",
+  "objectNumber": "NM.0088989",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/69238-20240308153228-default.webp",
+    "https://guide.nordiskamuseet.se/media/69238-20240308153228-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5234-20221110150304-default.webp",
+    "https://guide.nordiskamuseet.se/media/5234-20221110150304-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5235-20221110150305-default.webp",
+    "https://guide.nordiskamuseet.se/media/5235-20221110150305-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5236-20221110150307-default.webp",
+    "https://guide.nordiskamuseet.se/media/5236-20221110150307-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/69238-20240308153228-thumbnail.webp",
+  "intro": "Spjut som troligen har använts till vildsvinsjakt. Spjutets spets är lancettformat och har en cirkelrund parerplatta på holken.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

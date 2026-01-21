@@ -1,0 +1,44 @@
+{
+  "id": "nm-0192603-kopparkittel",
+  "title": "Kopparkittel",
+  "objectNumber": "",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24305-20231009101747-default.webp",
+    "https://guide.nordiskamuseet.se/media/24305-20231009101747-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5335-20231009101747-default.webp",
+    "https://guide.nordiskamuseet.se/media/5335-20231009101747-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24305-20231009101747-thumbnail.webp",
+  "intro": "Kittel, 1900-tal, Araksuolo, Pite lappmark, Sverige 15001599 1850 – 1933 Under 1500-talet var metallprodukter en av många varor som samerna bytte till sig under marknadsresor.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

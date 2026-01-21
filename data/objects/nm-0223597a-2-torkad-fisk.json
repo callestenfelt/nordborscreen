@@ -1,0 +1,41 @@
+{
+  "id": "nm-0223597a-2-torkad-fisk",
+  "title": "Torkad fisk",
+  "objectNumber": "NM.0223597A",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/25914-20231012151018-default.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/25914-20231012151018-thumbnail.webp",
+  "intro": "Torrfisk, 1940-tal, Långudden, Arjeplog, Sverige, NM.0223597A:2 15001599 1940 – 1940 Att torka fisk var ett sätt att konservera fisken. Den här har soltorkats av Sixten Lasko från Långudden i Arjeplog.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

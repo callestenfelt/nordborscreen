@@ -1,0 +1,44 @@
+{
+  "id": "nm-0055826a-skidor",
+  "title": "Skidor",
+  "objectNumber": "NM.0055826A",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24212-20231009101736-default.webp",
+    "https://guide.nordiskamuseet.se/media/24212-20231009101736-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/24213-20231009101737-default.webp",
+    "https://guide.nordiskamuseet.se/media/24213-20231009101737-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24212-20231009101736-thumbnail.webp",
+  "intro": "Skidor, 1800-tal, Degerfors, Västerbotten, Sverige, NM.0055826A-B",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

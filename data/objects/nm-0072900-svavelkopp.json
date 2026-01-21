@@ -1,0 +1,44 @@
+{
+  "id": "nm-0072900-svavelkopp",
+  "title": "Svavelkopp",
+  "objectNumber": "NM.0072900",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/24266-20231009101744-default.webp",
+    "https://guide.nordiskamuseet.se/media/24266-20231009101744-thumbnail.webp",
+    "https://guide.nordiskamuseet.se/media/5305-20231009101744-default.webp",
+    "https://guide.nordiskamuseet.se/media/5305-20231009101744-thumbnail.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/24266-20231009101744-thumbnail.webp",
+  "intro": "",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}

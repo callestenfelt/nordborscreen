@@ -1,0 +1,41 @@
+{
+  "id": "nm-0192594-jarvspjut",
+  "title": "Järvspjut",
+  "objectNumber": "NM.0192594",
+  "images": [
+    "https://guide.nordiskamuseet.se/media/69228-20240308151927-default.webp"
+  ],
+  "thumbnail": "https://guide.nordiskamuseet.se/media/69228-20240308151927-thumbnail.webp",
+  "intro": "Järvspjut, 1900-tal, Arvidsjaur, Lappland Sverige, NM.0192594 Järvspjut 15001599 1900 – 1933 Järvspjut av järn från Arvidsjaur. Spjutet har enligt uppgift använts till självskott på järv. Detta innebär att spjutet riggats i en fälla där djurets närvaro aktiverat det.",
+  "description": {
+    "sections": []
+  },
+  "timeline": {
+    "periods": [
+      {
+        "label": "1500-tal",
+        "active": true
+      },
+      {
+        "label": "1600-tal",
+        "active": false
+      },
+      {
+        "label": "1700-tal",
+        "active": false
+      },
+      {
+        "label": "1800-tal",
+        "active": false
+      },
+      {
+        "label": "1900-tal",
+        "active": false
+      },
+      {
+        "label": "2000-tal",
+        "active": false
+      }
+    ]
+  }
+}
